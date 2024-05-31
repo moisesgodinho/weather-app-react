@@ -12,7 +12,7 @@ const getWeatherData = (infoType, searchParams) => {
     return fetch(url).then((res) => res.json())
 }
 
-const iconUrlFromCode = (icon) => `http://openweathermap.org/img/wn/${icon}@2x.png`
+const iconUrlFromCode = (icon) => `src/assets/icons/${icon}.png`
 
 export const capitalizeFirstLetter = (string) => {
     return string.charAt(0).toUpperCase() + string.slice(1);
